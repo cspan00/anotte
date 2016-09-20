@@ -31,6 +31,8 @@
 
 .featurette {
     overflow: hidden;
+    height: 500px;
+    display: inline-block;
 }
 
 .featurette-image.pull-left {

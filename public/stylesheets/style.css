@@ -1,8 +1,62 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+.anotte-footer{
+  background-color: #364B71;
+}
+
+.navbar{
+  background-color: #364B71;
+}
+
+
+.fill_image.pull-left.fill{
+  height: 100%;
+  width: 50%;
+
+}
+
+
+.featurette_text{
+  margin: 50px;
+  width: 30%;
+  border: 1px solid black;
+  line-height: 20px;
+  background: white;
+}
+
+.featurette_header{
+  margin: 50px;
+}
+.featurette_mobile_header{
+  display: none;
+}
+
+@media(max-width: 991px){
+  .fill_image.pull-left.fill{
+    display: none;
+  }
+
+
+  .featurette_text{
+    margin: 10px;
+    width: 90%;
+    border: 0px solid black;
+    line-height: 20px;
+    background: white;
+    display: inline-block;
+  }
+
+
+  .featurette_mobile_header{
+    display: block;
+    margin: 20px;
+  }
 }
