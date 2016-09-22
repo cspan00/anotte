@@ -12,7 +12,7 @@ body {
 /* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
 
 .carousel {
-    height: 50%;
+    height: 70%;
 }
 
 .item,
@@ -31,6 +31,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
