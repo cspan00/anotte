@@ -16,6 +16,8 @@ a {
 .caption{
   font-family: 'Pacifico', cursive;
   font-size: 5em;
+  color: #EBBA36;
+  padding-top: 280px;
 }
 .anotte_logo{
   float: left;
@@ -72,6 +74,9 @@ a {
   margin-bottom: 30px;
 }
 
+.header{
+  height: 450px;
+}
 
 
 @media(max-width: 991px){
@@ -97,6 +102,9 @@ a {
   }
   .featurette_header{
     display: none;
+  }
+  .anotte_logo{
+    width: 150px;
   }
 
 
