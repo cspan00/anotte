@@ -9,7 +9,8 @@ a  {
 
 
 }
-p, h1, h2, h3, h4{
+p, h1, h2, h3, h4, p{
+  font-family: "Lato", sans-serif;
   color: #364B71;
 }
 .carousel-caption{
@@ -94,7 +95,7 @@ p, h1, h2, h3, h4{
 }
 
 .header_image{
-  height:400px;
+  height:500px;
 }
 
 
@@ -113,14 +114,17 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: "Lato" sans-serif;
   font-weight: 700;
   font-size: 2em;
 }
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
+}
+
+.page-header{
+  font-family: "Pacifico", cursive;
 }
 
 
