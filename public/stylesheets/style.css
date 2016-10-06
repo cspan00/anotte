@@ -89,13 +89,19 @@ p, h1, h2, h3, h4, p{
 
 
 
+
+
 .partner{
   font-family: 'Pacifico', cursive;
 
 }
 
+.name{
+  color: black;
+}
+
 .header_image{
-  height:500px;
+  height:400px;
 }
 
 
