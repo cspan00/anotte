@@ -15,6 +15,10 @@ var app = angular.module("anotte", ['ngRoute']);
     .when('/faq', {
       templateUrl: 'partials/faq.html'
     })
+    .when('/admin', {
+      templateUrl: 'partials/login.html',
+      controller: 'loginController'
+    })
 
 
   })
