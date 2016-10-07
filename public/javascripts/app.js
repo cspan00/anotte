@@ -18,6 +18,10 @@ var app = angular.module("anotte", ['ngRoute']);
     .when('/upcoming_events', {
       templateUrl: 'partials/upcoming_events.html'
     })
+    .when('/admin', {
+      templateUrl: 'partials/login.html',
+      controller: 'loginController'
+    })
 
 
   })
