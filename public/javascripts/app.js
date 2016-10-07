@@ -15,6 +15,9 @@ var app = angular.module("anotte", ['ngRoute']);
     .when('/faq', {
       templateUrl: 'partials/faq.html'
     })
+    .when('/upcoming_events', {
+      templateUrl: 'partials/upcoming_events.html'
+    })
 
 
   })
