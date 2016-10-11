@@ -1,0 +1,28 @@
+<h1> Create a new event </h1>
+<form method = "POST" action = "/new/event" name = "event">
+  <input type = "text" name = "name" placeholder = "enter name"></input>
+</br>
+  <textarea name = "description" placeholder = "enter description"></textarea>
+</br>
+  <input type = "text" name = "ticket_link" placeholder = "enter ticket link"></input>
+</br>
+  <input type = "text" name = "date" placeholder = "enter date"></input>
+</br>
+<input class="inputfile" type="file" name="file" id="file" required/>
+</br>
+  <input type = "hidden" name = "past" value = "false"></input>
+</br>
+  <button type = "submit"> submit </button>
+</form>
+
+
+
+
+
+
+
+<!-- <form method = "POST" action="/new/event" enctype="multipart/form-data">
+
+    <input type = "file" name="image" multiple = "multiple" id="file-input" accept="image/*"></input>
+    <button type = "submit" class = "btn"> upload
+</form> -->

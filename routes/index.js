@@ -4,12 +4,23 @@ var knex = require('../db/knex');
 var bcrypt = require('bcrypt')
 var router = express.Router();
 var saltRounds = 10;
-var jwt = require('jsonwebtoken')
+var jwt = require('jsonwebtoken');
+var cloudinary = require('cloudinary');
+var fs = require('fs')
+var multer = require('multer')
+var upload = multer({dest: './'})
 
 
 function users(){
   return knex('users')
 }
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_KEY,
+  api_secret: process.env.CLOUD_SECRET,
+
+});
 
 
 /* GET home page. */
@@ -33,6 +44,11 @@ router.post('/auth', function (req, res, next){
     })
 
   })
+});
+
+router.post('/new/event', upload.any(), function(req, res, next){
+  console.log(req.body);
+  res.redirect('/#/edit')
 });
 
 
