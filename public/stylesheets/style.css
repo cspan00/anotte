@@ -2,6 +2,7 @@ body {
   padding: 2%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 
+
 }
 
 a  {
@@ -10,7 +11,7 @@ a  {
 
 }
 p, h1, h2, h3, h4, p{
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #364B71;
 }
 .carousel-caption{
@@ -71,7 +72,6 @@ p, h1, h2, h3, h4, p{
 }
 
 .featurette_header{
-  margin: 50px;
   font-family: 'Pacifico', cursive;
   color: #EBBA36;
   font-size: 5em;
@@ -132,9 +132,33 @@ header .intro-text .skills {
 .page-header{
   font-family: "Pacifico", cursive;
 }
+.date-tag{
+  padding-top: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  text-align: center;
+  line-height: 10px;
+  float: left;
+  margin: 11px;
+  margin-bottom: 8px;
+
+}
+
+.social_icon{
+  color: #323335;
+}
+
 
 
 @media(max-width: 991px){
+
+
+  #about{
+    height: 550px;
+
+  }
+
   .fill_image.pull-left.fill{
     display: none;
   }
