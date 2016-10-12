@@ -149,7 +149,17 @@ header .intro-text .skills {
   color: #EBBA36;
 }
 
+.event_form label{
+  display: inline-block;
+}
 
+.event_form input{
+  display: block;
+}
+
+.event_container{
+  padding-bottom: 100px;
+}
 
 @media(max-width: 991px){
 

@@ -1,0 +1,34 @@
+<h1> Add an upcoming event </h1>
+
+<div class = "event_container">
+  <form method = "POST" action = "/new" enctype = "multipart/form-data" class = "event_form">
+    <label for = "title"> Enter Title </label>
+      <input type = "text" name = "title"></input>
+    <br>
+      <textarea name = "description" cols="50" rows = "10" placeholder = "enter description"></textarea>
+    <br>
+    <label for = "date"> Enter Date </label>
+      <input type = "text" name = "date"></input>
+    <br>
+    <label for = "photo"> select photo </label>
+      <input type = "file" name = "file" id = "file" accept "image/*"></input>
+    <br>
+    <label for = "ticket_link"> Enter Ticket link </label>
+      <input type = "text" name = "ticket_link"></input>
+    <input type = "hidden" name = "past" value = 'false'>
+    <br>
+    <button class = "btn btn-primary" type = "submit"> Submit </button>
+  </form>
+
+
+<h1> current upcoming events </h1>
+
+
+<div ng-repeat = "event in events">
+  <div class = 'current_container'>
+    <h3> {{event.title}} </h3>
+      <a href ="/#/edit/{{event.id}}"> Edit</a> <button class = "btn btn-success btn-sm"> Mark Complete</button> <button class =  "btn btn-danger btn-sm">Delete</button>
+  </div>
+</div>
+
+</div>

@@ -11,8 +11,9 @@ var multer = require('multer')
 var upload = multer({dest: './'})
 
 
-function users(){
-  return knex('users')
+
+function events(){
+  return knex('events')
 }
 
 cloudinary.config({
@@ -32,9 +33,10 @@ router.post('/auth', function (req, res, next){
   knex.select('password').from('users').then(function(result, plain){
     var plain = req.body.password;
     var hash = result[0].password;
+    var username = req.body.username
     bcrypt.compare(plain, hash, function(err, res){
       if(res === true){
-        req.session.user = "user";
+        req.session.user = username;
         console.log("success");
         console.log(req.session.id);
       }
@@ -46,23 +48,37 @@ router.post('/auth', function (req, res, next){
   })
 });
 
-router.post('/new/event', upload.any(), function(req, res, next){
-  console.log(req.body);
-  res.redirect('/#/edit')
+router.post('/new', upload.single('file'), function(req, res, next){
+    console.log(req.body);
+    cloudinary.uploader.upload(req.file.filename, function(result){
+    var events = {};
+    events.title = req.body.title;
+    events.description = req.body.description;
+    events.date = req.body.date;
+    events.ticket_link = req.body.ticket_link;
+    events.past = req.body.past;
+    events.event_photo = result.secure_url;
+    knex('events').insert(events).then(function(result){
+      console.log("success");
+    })
+    fs.unlink('./' + req.file.filename)
+})
+
 });
 
 
-
-
-
-
-router.get('/logout', function(req,res,next){
-  req.session.destroy(function(err) {
-      console.log("session destroyed!");
-      // console.log(req.session.id);
-    })
-  res.redirect('/#/admin')
+router.get('/current/events', function (req,res,next){
+  knex('events').where('past', false).then(function(result){
+    res.send(result)
+  })
 })
+
+router.get('/edit/:id', function(req,res,next){
+    knex('events').select('*').where('id', req.params.id).then(function(result){
+      res.send(result)
+    })
+})
+
 
 
 // router.post('/create', function(req,res,next){
