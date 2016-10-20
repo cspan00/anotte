@@ -1,8 +1,211 @@
 body {
-  padding: 50px;
+  padding: 2%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
 }
 
-a {
+a  {
   color: #00B7FF;
+
+
+}
+p, h1, h2, h3, h4, p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #364B71;
+  font-size: 1.5em;
+  line-height: 35px;
+}
+.carousel-caption{
+  color: #EBBA36;
+  margin: 0 auto;
+
+}
+/*.featurette{
+  margin: 10px;
+}*/
+
+.caption{
+  font-family: 'Lato', sans-serif;
+  font-size: 5em;
+  color: #364B71;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 70%
+
+}
+.anotte_logo{
+  float: left;
+  width: 300px;
+  opacity: .7;
+}
+
+
+.anotte-footer{
+  background-color: #364B71;
+}
+
+.navbar{
+  background-color: #364B71;
+}
+
+
+.fill_image.pull-left.fill{
+  height: 100%;
+  width: 50%;
+
+}
+.fill_image.pull-right.fill{
+  height: 100%;
+  width: 50%;
+}
+
+
+.featurette_text{
+  margin: 50px;
+  width: 40%;
+  line-height: 25px;
+  background: #EBBA36;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+.featurette_header{
+  font-family: 'Pacifico', cursive;
+  color: #EBBA36;
+  font-size: 5em;
+}
+.featurette_mobile_header{
+  display: none;
+  font-family: 'Pacifico', cursive;
+  color: #EBBA36;
+
+}
+
+.thumb{
+  margin-bottom: 30px;
+}
+
+
+
+
+
+.partner{
+  font-family: 'Pacifico', cursive;
+
+}
+
+.name{
+  color: black;
+}
+
+.header_image{
+  height:400px;
+}
+
+
+header {
+  background: #354A70;
+  text-align: center;
+}
+header .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header img {
+  display: block;
+  margin: 0 auto 20px;
+
+}
+header .intro-text .name {
+  display: block;
+  font-family: "Lato" sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.page-header{
+  font-family: "Pacifico", cursive;
+}
+.date-tag{
+  padding-top: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  text-align: center;
+  line-height: 10px;
+  float: left;
+  margin: 11px;
+  margin-bottom: 8px;
+
+}
+
+.social_icon{
+  color: #EBBA36;
+}
+
+.event_form label{
+  display: inline-block;
+}
+
+.event_form input{
+  display: block;
+}
+
+.event_container{
+  padding-bottom: 100px;
+}
+
+
+
+@media(max-width: 991px){
+
+
+  #about{
+    height: 550px;
+
+  }
+
+  .fill_image.pull-left.fill{
+    display: none;
+  }
+  .fill_image.pull-right.fill{
+    display: none;
+  }
+  .caption{
+    font-size: 2em;
+  }
+
+
+  .featurette_text{
+    margin: 10px;
+    width: 90%;
+    border: 0px solid black;
+    line-height: 30px;
+    background: white;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  .featurette_header{
+    display: none;
+  }
+  .anotte_logo{
+    width: 150px;
+  }
+  .header_image{
+    height: 200px;
+  }
+
+
+  .featurette_mobile_header{
+    display: block;
+    margin: 20px;
+  }
 }

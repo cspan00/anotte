@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anotte Denver</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/blueimp-gallery.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../stylesheets/style.css" rel= "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/images/icons/manifest.json">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/icons/favicon.ico">
+    <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff"> -->
+
+</head>
+
+<body>
+
+
+  <!-- bluimp -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+  <!-- Page Content -->
+
+  <div class="col-lg-12">
+                  <h1 class="page-header">5 Fridges Farm Dinner</h1>
+  </div>
+
+<div id ="links">
+  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <a class = "thumbnail" href = "../images/5FF_01.jpg" title = "Five Fridges Farm">
+      <img class = "img img-responsive" src="../images/5FF_01.jpg" alt="Banana">
+    </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <a class = "thumbnail" href = "../images/5FF_02.jpg" title = "Five Fridges Farm">
+      <img class = "img img-responsive" src="../images/5FF_02.jpg" alt="Banana">
+    </a>
+  </div>
+
+
+  <!-- <a href="../images/5FF_01.jpg" title="Banana">
+        <img class = "img img-responsive" src="../images/5FF_01.jpg" alt="Banana">
+    </a>
+    <a href="../images/5FF_02.jpg" title="Apple">
+        <img class = "img img-responsive" src="../images/5FF_02.jpg" alt="Apple">
+    </a> -->
+</div>
+
+
+  <script src="../js/blueimp-gallery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+
+</body>
+
+</html>
