@@ -4,7 +4,6 @@ var express = require('express');
 var bcrypt = require('bcrypt')
 var router = express.Router();
 var saltRounds = 10;
-var jwt = require('jsonwebtoken');
 var cloudinary = require('cloudinary');
 var fs = require('fs')
 var multer = require('multer')
