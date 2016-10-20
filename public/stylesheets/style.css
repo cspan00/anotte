@@ -124,7 +124,12 @@ header .intro-text .name {
   display: block;
   font-family: "Lato" sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 4em;
+}
+.name{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 200px;
 }
 header .intro-text .skills {
   font-size: 1.25em;
