@@ -1,6 +1,6 @@
 require('dotenv').load();
 var express = require('express');
-var knex = require('../db/knex');
+// var knex = require('../db/knex');
 var bcrypt = require('bcrypt')
 var router = express.Router();
 var saltRounds = 10;
