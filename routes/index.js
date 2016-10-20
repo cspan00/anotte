@@ -1,4 +1,4 @@
-require('dotenv').load();
+// require('dotenv').load();
 var express = require('express');
 // var knex = require('../db/knex');
 var bcrypt = require('bcrypt')
