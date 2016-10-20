@@ -13,6 +13,7 @@ a  {
 p, h1, h2, h3, h4, p{
   font-family: 'Open Sans Condensed', sans-serif;
   color: #364B71;
+  font-size: 1.5em;
 }
 .carousel-caption{
   color: #EBBA36;
@@ -160,6 +161,8 @@ header .intro-text .skills {
 .event_container{
   padding-bottom: 100px;
 }
+
+
 
 @media(max-width: 991px){
 
