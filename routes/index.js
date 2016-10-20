@@ -60,6 +60,7 @@ router.post('/new', upload.single('file'), function(req, res, next){
     events.event_photo = result.secure_url;
     knex('events').insert(events).then(function(result){
       console.log("success");
+      res.redirect('/#/create_event')
     })
     fs.unlink('./' + req.file.filename)
 })
@@ -73,10 +74,10 @@ router.get('/current/events', function (req,res,next){
   })
 })
 
-router.get('/edit/:id', function(req,res,next){
-    knex('events').select('*').where('id', req.params.id).then(function(result){
-      res.send(result)
-    })
+
+router.post('/modify', function (req,res,next){
+  console.log(req.body);
+  res.redirect('/#/create_event')
 })
 
 

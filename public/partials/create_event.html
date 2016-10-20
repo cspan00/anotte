@@ -7,7 +7,7 @@
     <br>
       <textarea name = "description" cols="50" rows = "10" placeholder = "enter description"></textarea>
     <br>
-    <label for = "date"> Enter Date </label>
+    <label for = "date"> Enter Date (exactly as you want it to appear) </label>
       <input type = "text" name = "date"></input>
     <br>
     <label for = "photo"> select photo </label>
@@ -15,6 +15,8 @@
     <br>
     <label for = "ticket_link"> Enter Ticket link </label>
       <input type = "text" name = "ticket_link"></input>
+    <label for ="password"> Enter Password </label>
+      <input type = "password" name "password"></input>
     <input type = "hidden" name = "past" value = 'false'>
     <br>
     <button class = "btn btn-primary" type = "submit"> Submit </button>
@@ -27,7 +29,9 @@
 <div ng-repeat = "event in events">
   <div class = 'current_container'>
     <h3> {{event.title}} </h3>
-      <a href ="/#/edit/{{event.id}}"> Edit</a> <button class = "btn btn-success btn-sm"> Mark Complete</button> <button class =  "btn btn-danger btn-sm">Delete</button>
+    <form method = "post" action = "/modify">
+      <button class = "btn btn-success btn-sm" type = "submit"  name = "mark" value = "{{event.id}}"> Mark Complete</button> <button class =  "btn btn-danger btn-sm" type = "submit" name = "delete" value = "delete">Delete</button>
+    </form>
   </div>
 </div>
 
