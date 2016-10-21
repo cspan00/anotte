@@ -98,9 +98,7 @@ p, h1, h2, h3, h4, p{
 
 }
 
-.name{
-  color: black;
-}
+
 
 .header_image{
   height:400px;
@@ -129,7 +127,7 @@ header .intro-text .name {
 .name{
   color: white;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 200px;
+  font-size: 150px;
 }
 header .intro-text .skills {
   font-size: 1.25em;
@@ -149,7 +147,6 @@ header .intro-text .skills {
   float: left;
   margin: 11px;
   margin-bottom: 8px;
-
 }
 
 .social_icon{
@@ -174,7 +171,7 @@ header .intro-text .skills {
 
 
   #about{
-    height: 550px;
+    height: 590px;
 
   }
 
@@ -197,6 +194,7 @@ header .intro-text .skills {
     background: white;
     display: inline-block;
     border-radius: 20px;
+
   }
   .featurette_header{
     display: none;
@@ -209,8 +207,13 @@ header .intro-text .skills {
   }
 
 
+
   .featurette_mobile_header{
     display: block;
     margin: 20px;
   }
+  .name{
+    display: none;
+  }
+
 }
