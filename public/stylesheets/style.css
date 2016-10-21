@@ -122,7 +122,7 @@ header .intro-text .name {
   display: block;
   font-family: "Lato" sans-serif;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 2em;
 }
 .name{
   color: white;
@@ -212,8 +212,6 @@ header .intro-text .skills {
     display: block;
     margin: 20px;
   }
-  .name{
-    display: none;
-  }
+
 
 }
